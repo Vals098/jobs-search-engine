@@ -10,6 +10,10 @@ const Favourites = function () {
   return (
     <div>
       <h1>Favourites</h1>
+
+      {favourites.map((jobData) => (
+        <div key={jobData._id}>{jobData.company_name}</div>
+      ))}
     </div>
   )
 }
