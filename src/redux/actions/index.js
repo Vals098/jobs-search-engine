@@ -1,4 +1,5 @@
 export const ADD_TO_FAVOURITES = "ADD_TO_FAVOURITES"
+export const REMOVE_FROM_FAVOURITES = "REMOVE_FROM_FAVOURITES"
 export const GET_JOBS = "GET_JOBS"
 export const GET_JOBS_ERROR = "GET_JOBS_ERROR"
 
@@ -7,6 +8,13 @@ export const addToFavouritesAction = (company) => {
     type: ADD_TO_FAVOURITES,
     payload: company,
   }
+}
+
+export const removeFromFavouritesAction = (company) => {
+    return {
+        type: REMOVE_FROM_FAVOURITES,
+        payload: company,
+    }
 }
 
 export const getJobsAction = (company) => {
