@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const Favourites = function () {
   // favourites becomes the array "content[]"
-  const favourites = useSelector((state) => state.favourites.content)
+  const favourites = useSelector((state) => state.favourites.favourites.content)
 
   console.log(favourites)
 

@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import mainReducer from "../reducers";
+import rootReducer from "../reducers";
 
 // contains the global state
 const store = configureStore({
-    reducer: mainReducer
+    reducer: rootReducer
 })
 
 export default store
