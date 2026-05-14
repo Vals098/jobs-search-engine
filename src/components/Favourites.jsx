@@ -12,9 +12,9 @@ const Favourites = function () {
     <div>
       <h1>Favourites</h1>
 
-      {favourites.map((jobData) => (
-        <div key={jobData._id}>
-          {<Link to={`/${jobData.company_name}`}>{jobData.company_name}</Link>}
+      {favourites.map((company, index) => (
+        <div key={index}>
+          {<Link to={`/${company}`}>{company}</Link>}
         </div>
       ))}
     </div>
